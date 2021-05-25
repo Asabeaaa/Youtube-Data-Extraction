@@ -5,8 +5,8 @@ from oauth2client.tools import argparser
 import pandas as pd 
 import datetime
 
-
-API_KEY='AIzaSyB_o59KhizbP0szVuuz5CK6UgvMg43HmuQ'
+#edit with generated api key 
+API_KEY='######################################'
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
 
@@ -37,6 +37,7 @@ search_response = youtube.search().list(
 #print(search_response)
 allVideos=[]
 
+#stores info needed from video in a key, value pair dictionayr
 for search_result in search_response.get("items", []):
     video = {}
     if search_result["id"]["kind"] == "youtube#video":
@@ -44,20 +45,23 @@ for search_result in search_response.get("items", []):
         video['videoTitle'] = search_result["snippet"]["title"]
         video['videoDescription'] = search_result['snippet']['description']
         video['videoUrl'] = "https://www.youtube.com/watch?v="+search_result["id"]["videoId"]
-
+        
+        #extracting time from date time object
         videoPublishedTime = datetime.datetime.strptime(search_result['snippet']['publishedAt'],"%Y-%m-%dT%H:%M:%SZ")
         new_format_time = "%H:%M:%S"
         video['videoPublishedTime'] = videoPublishedTime.strftime(new_format_time)
 
-
+    #each dictionary is appended into the list
     allVideos.append(video)
- 
+    
+ #list of dictionaries is converted into a data frame
 videos_df=pd.DataFrame(allVideos)
 #print(videos_df)
 
 #keys = ','.join(videos.keys())
 
 #getting video stats
+
 def get_stats(row):
     videos_list_response = youtube.videos().list(
     id=row['videoId'],
@@ -66,6 +70,7 @@ def get_stats(row):
 
     #print(videos_list_response)
     
+    #checks to see if object is present in json
     stats_keys=['viewCount','likeCount','dislikeCount','favoriteCount','commentCount']
     for item in videos_list_response.get("items", []):
         for key in stats_keys:
@@ -77,13 +82,14 @@ def get_stats(row):
 
                           
     return row
-
+#updating dataframe with video statistics
 videos_df=videos_df.apply(get_stats,axis=1)
 
 print(videos_df)
 print(videos_df.columns)
 
 # # #generating csv file
+#csv file is saved with the time stamp from when the script was run
 new_format_time_2 = "%d-%m-%Y_%H-%M-%S"
 script_time = datetime.datetime.now().strftime(new_format_time_2)
 
