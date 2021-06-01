@@ -1,25 +1,21 @@
-# Youtube Data Extraction: Project Overview
-This script extracts YouTube data in relation to the #endsars# trend that rocked the entire world in Nigeria in 2020.
+# Youtube Data Extractor
+## Project Overview
+This script extracts YouTube data in relation to the #endsars# trend that rocked the entire world in Nigeria in 2020. When this python script is run it makes a call to the Youtube Api and returns a list of videos with the hashtag #EndSars in it's title or description,  converts the information we need which is stored in json objects into a dataframe and then stores the output in a csv file.
 
-#Description
-When this python script is run it makes a call to the Youtube Api and returns a list of videos with the hashtag #EndSars in it's title or description,  converts the information we need which is stored in json objects into a dataframe and then stores the output in a csv file.
-
-#Required dependencies to install
-pip install google-api-python-client
-pip install oauth2client
-pip install pandas
-
-#Libraries to import
+###### Libraries to import
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from oauth2client.tools import argparser
 import pandas as pd
 import datetime
 
-#Project was divided into 3 parts:
+###### Project was divided into 3 parts:
 1. Using Google Developers Console to get api Key 
 2. Filter youtube for the type of data(video, channels, playlists) you want and other specifics like duration, year posted, how many videos you want returned, etc
 3. Get statistics asscociated with those videos, eg; number of likes, dislikes, views, etc
+
+## Code and Resources used 
+
 
 #Using Google Developers Console
 Steps to follow to get Youtube api key;
