@@ -33,9 +33,10 @@ This script extracts YouTube data in relation to the #endsars# trend that rocked
 
 After the following steps your key is ready for use to make api calls.
 
-- Passing credentials into python script
-![Capture1](https://user-images.githubusercontent.com/65185008/120339033-9d583f80-c2a9-11eb-9582-21432d106fb6.PNG)
-![Capture2](https://user-images.githubusercontent.com/65185008/120339166-ba8d0e00-c2a9-11eb-83bf-4c30913c007e.PNG)
+######  Passing credentials into python script
+
+- ![Capture1](https://user-images.githubusercontent.com/65185008/120339033-9d583f80-c2a9-11eb-9582-21432d106fb6.PNG)
+- ![Capture2](https://user-images.githubusercontent.com/65185008/120339166-ba8d0e00-c2a9-11eb-83bf-4c30913c007e.PNG)
 
 2. Filter youtube for the type of data you want, year data was uploaded and the number of videos you want to return
 
