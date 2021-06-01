@@ -40,13 +40,13 @@ After the following steps your key is ready for use to make api calls.
 
 2. Filter youtube for the type of data you want, year data was uploaded and the number of videos you want to return
 
-![Capture3](https://user-images.githubusercontent.com/65185008/120339744-3a1add00-c2aa-11eb-977a-aafc4775c1b9.PNG)
+![Capture9](https://user-images.githubusercontent.com/65185008/120348009-9fbe9780-c2b1-11eb-84b4-4566c9b7190c.PNG)
 - passing requirements needed for filtering data as an argument
 ###### Arguments
 - -q, --query : Specify the search query. The default value is '#endsars'.
 - --video-duration, --video_duration : Specify the length of video you want.
 - --published-after, --published_after : Specify a date to filter the search results from. The default value is 01-01-2021.
-- --max-results, --max_results : Specify how many items to include the search results. The allowed input should be an integer from 0 to 50. The default value is 10.
+- --max-results, --max_results : Specify how many items to include the search results. The allowed input should be an integer from 0 to 50. The default value is 50.
 
 ###### Options (inputs for video duration) :
 1. any: Any video length.
