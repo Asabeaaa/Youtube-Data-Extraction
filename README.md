@@ -20,7 +20,7 @@ YouTube API source: https://developers.google.com/youtube/v3/getting-started
 Understanding how to use Youtube API: https://www.analyticsvidhya.com/blog/2014/09/mining-youtube-python-social-media-analysis/
 
 ## Activities done 
-** ** Using Google Developers Console
+###### Using Google Developers Console
 - Steps to follow to get Youtube api key;
 1. Launch Google Developers Console (url= https://console.developers.google.com)
 2. Click on ENABLE APIS AND SERVICES ( this can be found at the top of the site)
@@ -31,6 +31,11 @@ Understanding how to use Youtube API: https://www.analyticsvidhya.com/blog/2014/
 7. After select create api key,key is created and you can copy it.
 
 After the following steps your key is ready for use to make api calls.
+
+###### Passing credentials into python script
+![Capture1](https://user-images.githubusercontent.com/65185008/120339033-9d583f80-c2a9-11eb-9582-21432d106fb6.PNG)
+![Capture2](https://user-images.githubusercontent.com/65185008/120339166-ba8d0e00-c2a9-11eb-83bf-4c30913c007e.PNG)
+
 
 
 
