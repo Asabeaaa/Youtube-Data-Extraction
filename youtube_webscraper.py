@@ -13,7 +13,7 @@ YOUTUBE_API_VERSION = "v3"
 argparser.add_argument("--q", help="Search term", default="#EndSars")
 argparser.add_argument("--video-duration", help="Video duration", default="medium")
 argparser.add_argument("--published-after", help="Published after", default="2021-01-01T00:00:00Z")
-argparser.add_argument("--max-results", help="Max results", default=10)
+argparser.add_argument("--max-results", help="Max results", default=50)
 
 args = argparser.parse_args()
 options = args
