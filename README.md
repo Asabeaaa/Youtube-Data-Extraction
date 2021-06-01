@@ -1,4 +1,4 @@
-# Youtube-Data-Extraction
+# Youtube Data Extraction: Project Overview
 This script extracts YouTube data in relation to the #endsars# trend that rocked the entire world in Nigeria in 2020.
 
 #Description
