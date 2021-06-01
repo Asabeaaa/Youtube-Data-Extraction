@@ -56,7 +56,7 @@ After the following steps your key is ready for use to make api calls.
 
 ###### Passing arguments into youtube search method
 ![Capture4](https://user-images.githubusercontent.com/65185008/120342027-4142ea80-c2ac-11eb-879d-7731f8e2eb55.PNG)
-   - result is a json file that contains different objects that describe the video you have extracted, such as, video id, date uploaded,title of the video, etc. You can retrieve objects needed for your task**
+   - result is a json file that contains different objects that describe the video you have extracted, such as, video id, date uploaded,title of the video, etc. You can retrieve objects needed for your task
 
 3. Get statistics asscociated with those video
 ###### ![Capture7](https://user-images.githubusercontent.com/65185008/120343751-d397be00-c2ad-11eb-9881-5f6dc157ca94.PNG)
