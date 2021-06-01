@@ -45,7 +45,7 @@ After the following steps your key is ready for use to make api calls.
 ###### Arguments
 - -q, --query : Specify the search query. The default value is '#endsars'.
 - --video-duration, --video_duration : Specify the length of video you want.
-- --published-after, --published_after : Specify a date to filter the search results from. The default value is 01-01-2020.
+- --published-after, --published_after : Specify a date to filter the search results from. The default value is 01-01-2021.
 - --max-results, --max_results : Specify how many items to include the search results. The allowed input should be an integer from 0 to 50. The default value is 10.
 
 ###### Options (inputs for video duration) :
