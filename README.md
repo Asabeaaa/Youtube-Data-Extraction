@@ -35,7 +35,7 @@ After the following steps your key is ready for use to make api calls.
 
 ######  Passing credentials into python script
 
-###### ![Capture1](https://user-images.githubusercontent.com/65185008/120339033-9d583f80-c2a9-11eb-9582-21432d106fb6.PNG)
+###### ![Capture6](https://user-images.githubusercontent.com/65185008/120343032-350b5d00-c2ad-11eb-803f-f055463706f2.PNG)
 ###### ![Capture2](https://user-images.githubusercontent.com/65185008/120339166-ba8d0e00-c2a9-11eb-83bf-4c30913c007e.PNG)
 
 2. Filter youtube for the type of data you want, year data was uploaded and the number of videos you want to return
@@ -56,10 +56,16 @@ After the following steps your key is ready for use to make api calls.
 
 ###### Passing arguments into youtube search method
 ![Capture4](https://user-images.githubusercontent.com/65185008/120342027-4142ea80-c2ac-11eb-879d-7731f8e2eb55.PNG)
+** result is a json file that contains different objects that describe the video you have extracted, such as, video id, date uploaded,title of the video, etc. You can retrieve objects needed for your task **
+
+3. Get statistics asscociated with those video
+###### ![Capture7](https://user-images.githubusercontent.com/65185008/120343751-d397be00-c2ad-11eb-9881-5f6dc157ca94.PNG)
+By taking the ids of the videos extracted from youtube , you can generate the statistics associated with these videos by passing the ids into the youtube api videos method and specifying you want the statistics. Some stats you can generate are; the view count, likes count, number of dislikes, number of favourites, etc.
 
 
-
-
+## Output
+Final dataframe is stored into a csv with the filename having the following format: current_timestamp_youtube_data.
+** the current time stamp is generated automatically using datetime.datetime.now().strftime(time_format), where time_format is the specified format you want the date to be in ("%d-%m-%Y_%H-%M-%S") **
 
 
 
