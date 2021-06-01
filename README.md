@@ -3,11 +3,11 @@
 This script extracts YouTube data in relation to the #endsars# trend that rocked the entire world in Nigeria in 2020. When this python script is run it makes a call to the Youtube Api and returns a list of videos with the hashtag #EndSars in it's title or description,  converts the information we need which is stored in json objects into a dataframe and then stores the output in a csv file.
 
 ###### Libraries to import
-..* from googleapiclient.discovery import build
+- from googleapiclient.discovery import build
 - from googleapiclient.errors import HttpError
 - from oauth2client.tools import argparser
 - import pandas as pd
-import datetime
+- import datetime
 
 ###### Project was divided into 3 parts:
 1. Using Google Developers Console to get api Key 
@@ -15,10 +15,12 @@ import datetime
 3. Get statistics asscociated with those videos, eg; number of likes, dislikes, views, etc
 
 ## Code and Resources used 
+###### Resources 
+YouTube API source: https://developers.google.com/youtube/v3/getting-started 
 
-
-#Using Google Developers Console
-Steps to follow to get Youtube api key;
+## Activities done 
+###### Using Google Developers Console
+- Steps to follow to get Youtube api key;
 1. Launch Google Developers Console (url= https://console.developers.google.com)
 2. Click on ENABLE APIS AND SERVICES ( this can be found at the top of the site)
 3. Next you search for youtube and select Youtube Data Api v3 (this is an API that provides access to YouTube data, such as videos, playlists, channels)
